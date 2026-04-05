@@ -1,0 +1,19 @@
+{
+  "name": "tran-kiet-badminton",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite src",
+    "build": "vite build src",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "sass": "^1.99.0",
+    "swiper": "^12.1.3",
+    "vite": "^8.0.3"
+  }
+}

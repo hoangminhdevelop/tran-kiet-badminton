@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import Swiper from 'swiper';
-import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
+import { Pagination, Autoplay, EffectFade, Mousewheel } from 'swiper/modules';
 
 // Initialize the Swiper Carousel
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,10 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Hero Swiper Overview
     const heroSwiper = new Swiper('.hero-swiper', {
-        modules: [Pagination, Autoplay, EffectFade],
+        modules: [Pagination, Autoplay, EffectFade, Mousewheel],
         loop: true,
         speed: 1000,
         effect: 'fade',
+        mousewheel: {
+            forceToAxis: true,
+            thresholdDelta: 30,
+            thresholdTime: 400,
+            releaseOnEdges: false,
+        },
         autoplay: {
             delay: 6000,
             disableOnInteraction: false,
@@ -43,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Coach Roster Carousel
     const coachSwiper = new Swiper('.coach-swiper', {
-        loop: false,
+        loop: true,
         slidesPerView: 1.2,
         spaceBetween: 24,
         grabCursor: true,

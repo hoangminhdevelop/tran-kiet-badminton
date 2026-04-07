@@ -11,6 +11,7 @@
 
   // Vibrant Accents
   --accent-orange: #ff7101; // Main Brand Orange
+  --accent-orange-ink: #8a3500; // High-contrast orange text on light surfaces
   --accent-green: #003f74; // Swap green to Navy for cohesion in stats
   --accent-soft: color-mix(
     in srgb,
@@ -425,7 +426,7 @@ img {
 
   &.primary {
     background: var(--accent-orange);
-    color: #fff;
+    color: var(--text-primary);
     border: 2px solid var(--accent-orange);
     box-shadow: 0 8px 22px
       color-mix(in srgb, var(--accent-orange) 30%, transparent);
@@ -433,7 +434,7 @@ img {
     &:hover {
       transform: translateY(-2px);
       background: #fff;
-      color: var(--accent-orange);
+      color: var(--text-primary);
       border-color: #fff;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
     }
@@ -575,7 +576,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-weight: 800;
-  color: var(--accent-orange);
+  color: var(--accent-orange-ink);
 }
 
 .about-copy .heading {
@@ -903,7 +904,7 @@ img {
   .coach-role {
     font-family: var(--font-heading);
     font-size: var(--text-sm);
-    color: var(--accent-orange);
+    color: var(--accent-orange-ink);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 800;

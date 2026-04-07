@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Coach Roster Carousel
     const coachSwiper = new Swiper('.coach-swiper', {
-        loop: true,
+        loop: false,
         slidesPerView: 1.2,
         spaceBetween: 24,
         grabCursor: true,
         breakpoints: {
             1024: {
-                slidesPerView: 2.5,
-                spaceBetween: 48,
+                slidesPerView: 3.2,
+                spaceBetween: 24,
             },
         },
     });

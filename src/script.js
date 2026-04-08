@@ -54,6 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 24,
         grabCursor: true,
         breakpoints: {
+            1280: {
+                slidesPerView: 3.5,
+                spaceBetween: 24,
+            },
             1024: {
                 slidesPerView: 3.2,
                 spaceBetween: 24,
